@@ -10,8 +10,6 @@ from typing import Generator
 async def async_generator() -> Generator[float, None, None]:
     """
     Async generators that takes no arguments."""
-    count = 0
-    while count < 10:
-        await asyncio.sleep(random.uniform(0, 1))
-        yield random.uniform(0, 10)
-        count += 1
+    for _ in range(10):
+        await asyncio.sleep(1)
+        yield random.random() * 10
