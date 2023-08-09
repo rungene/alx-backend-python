@@ -4,9 +4,10 @@
 """
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator() -> Generators[float, None, None]:
+async def async_generator() -> Generator[float, None, None]:
     """
     Async generators that takes no arguments."""
     count = 0
