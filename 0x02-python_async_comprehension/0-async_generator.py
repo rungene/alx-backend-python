@@ -6,7 +6,7 @@ import asyncio
 import random
 
 
-async def async_generator():
+async def async_generator() -> Generators[float, None, None]:
     """
     Async generators that takes no arguments."""
     count = 0
