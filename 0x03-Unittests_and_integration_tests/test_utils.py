@@ -20,4 +20,4 @@ class TestAccessNestedMap(unittest.TestCase):
         This method test that the method return value
         is the expected result"""
         result = access_nested_map(nested_map, path)
-        self.assertEqual(result, expected_result)
+        self.assertEqual(expected_result, result)
