@@ -76,4 +76,4 @@ class TestMemoize(unittest.TestCase):
             test_memo.a_property
             test_memo.a_property
 
-            memo_mock.assert_called_once()
+            memo_mock.asset_called_once()
